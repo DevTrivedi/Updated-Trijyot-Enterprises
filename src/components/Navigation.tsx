@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src='/public/logo.png' alt="Logo" className="w-10 h-10 object-contain" />
+            <img src={logo} alt="Logo" className="w-10 h-10 object-contain" />
 
             <div className="text-2xl font-bold">
               <span style={{ color: "#a5810b" }}>Trijyot</span>{" "}
