@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 49 61% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 85% 25%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 215 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 215 85% 25%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors for trade/logistics theme */
+    --trade-primary: 215 85% 25%;
+    --trade-secondary: 215 70% 45%;
+    --trade-accent: 200 80% 50%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(90deg, #d1b430);
+    /* linear-gradient(135deg, hsl(215 85% 25%) 0%, hsl(215 70% 45%) 100%); */
+    --gradient-card: linear-gradient(90deg, #d1b430);
+    /* linear-gradient(to bottom, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%); */
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(215 85% 25% / 0.1), 0 2px 4px -1px hsl(215 85% 25% / 0.06);
+    --shadow-card-hover: 0 20px 25px -5px hsl(215 85% 25% / 0.15), 0 10px 10px -5px hsl(215 85% 25% / 0.08);
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 215 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 215 70% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 215 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
